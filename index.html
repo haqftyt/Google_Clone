@@ -9,6 +9,55 @@
     <title>Google</title>
 </head>
 <body>
-    
+    <nav>
+            <div style="width:70%; height:70px; display:inline-block;"></div>
+            
+                <div>
+                    <ul>
+                        <li><a href="#">Gmail</a></li>
+                        <li><a href="#">Images</a></li>
+                    </ul>
+                </div>
+                <div class="grid-hover">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2486/2486225.png" alt="" width="50%" style="margin:12px;">
+                </div>
+                <div class="lab-hover">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3335/3335292.png" alt="" width="50%" style="margin:12px;">
+                </div>
+                <div class="profile">
+                    <img src="https://static-00.iconduck.com/assets.00/profile-circle-icon-2048x2048-cqe5466q.png" alt="" width="90%" style="margin:2px;">
+                </div> 
+    </nav>
+    <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png" alt="Google Logo" width="20%">
+        
+        <div class="input-search">
+            <form action="">
+                <input type="text" class="search"placeholder="Search Google or type" value="">
+            </form>
+        </div>
+        <div class="btn-container">
+            <button class="btn searchBtn"><span>Google Search</span></button>
+        <button class="btn"><span>I'm Feeling Lucky</span></button>
+        </div>
+        <ul>
+            <li>Google Offered in</li>
+            <li><a href="#">தமிழ்</a></li>
+            <li><a href="#">English</a></li>
+            <li><a href="#">తెలుగు</a></li>
+            <li><a href="#">हिंदी</a></li>
+            <li><a href="#">ಕೆನಡಾ</a></li>
+            <li><a href="#">
+                മലയാളം</a></li>
+        </ul>
+    </div>
+    <script>
+        let search=document.querySelector('.search');
+        let searchBtn=document.querySelector('.searchBtn');
+        searchBtn.onclick=function(){
+            let url='https://www.google.com/search?q='+search.value;
+         window.open(url);
+        }
+    </script>
 </body>
 </html>
