@@ -76,8 +76,11 @@ input:focus{
 span{
     font-weight: 600;
 }
-@media screen and (max-width:400px){
+@media all and (max-width:1163px){
     nav{
+        display:none;
+    }
+    .blank{
         display:none;
     }
 }
