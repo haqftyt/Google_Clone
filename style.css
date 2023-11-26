@@ -76,11 +76,31 @@ input:focus{
 span{
     font-weight: 600;
 }
-@media all and (max-width:1163px){
+.btn1{
+    display:inline-block;
+    padding:10px 20px;
+    border:none;
+    border-radius: 4px;
+    color:#f56366;
+   }
+@media all and (max-width:1178px){
     nav{
         display:none;
     }
-    .blank{
-        display:none;
-    }
+}
+@media all and (max-width:700px){
+   .logo img{
+    width:40%;
+   }
+   input{
+    width:300px;
+    padding:15px 50px;
+    border-radius:25px;
+    border:1px solid #ccc;
+    background: url(img/mic.png) no-repeat;
+    background: url(img/7503218_search_find_view_icon.png) no-repeat,
+    url(img/mic.png) no-repeat;
+    background-size: 15px,13px;
+    background-position: left 25px center,right 25px center;
+   }   
 }
